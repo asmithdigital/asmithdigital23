@@ -262,11 +262,26 @@ nav#menu #menu-nav li a:hover {
 #projects li {
 	list-style: none;
 	margin-bottom: 30px;
+	margin-top: 10px;
 }
 
+
+.test-gallery {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+
+.test-gallery .item-project {
+	display: inline-block;
+	float: none;
+  }
+  
 .item-project {
-	position: relative;
-	overflow: hidden;	
+	/* position: relative;
+	overflow: hidden;	 */
+	box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .item-project:hover img,

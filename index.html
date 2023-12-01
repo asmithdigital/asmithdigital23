@@ -23,6 +23,11 @@
 <!-- Responsive -->
 <link href="assets/css/responsive.css" rel="stylesheet">
 
+<!-- Photoswipe -->
+<script src="assets/js/photoswipe.umd.min.js"></script>
+<script src="assets/js/photoswipe-lightbox.umd.min.js"></script>    
+<link rel="stylesheet" href="assets/css/photoswipe.css">
+
 <!-- Google Font -->
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
@@ -88,11 +93,48 @@
     </div>
     <div class="row">
         <div id="portfolio-projects">
-            <ul id="projects">
-                <li class="item-project span3">
-                    <a href="work.html" title="Work1"><img src="assets/img/home1.jpg" alt=""></a>
+            <ul id="projects" class="test-gallery">
+                <li class="item-project span8">
+                    <a href="assets/img/RAA-home.png" data-pswp-width="1529" data-pswp-height="990" data-cropped="true" target="_blank">
+                        <img src="assets/img/RAA-home.png" alt="">
+                    </a>
                 </li>       
-                <li class="item-project span3">
+                <li class="item-project span8">
+                    <a href="assets/img/RAA-sa.png" data-pswp-width="1529" data-pswp-height="990" data-cropped="true" target="_blank">
+                        <img src="assets/img/RAA-sa.png" alt="">
+                    </a>
+                </li>
+                <li class="item-project span8">
+                    <a href="assets/img/RAA-holiday.png" data-pswp-width="1529" data-pswp-height="990" data-cropped="true" target="_blank">
+                        <img src="assets/img/RAA-holiday.png" alt="">
+                    </a>
+                </li> 
+                <li class="item-project span8">
+                    <a href="assets/img/RAA-car.png" data-pswp-width="1529" data-pswp-height="990" data-cropped="true" target="_blank">
+                        <img src="assets/img/RAA-car.png" alt="">
+                    </a>
+                </li> 
+                <li class="item-project span8">
+                    <a href="assets/img/RAA-persona.png" data-pswp-width="1529" data-pswp-height="990" data-cropped="true" target="_blank">
+                        <img src="assets/img/RAA-persona.png" alt="">
+                    </a>
+                </li> 
+                <li class="item-project span8">
+                    <a href="assets/img/RAA-journey.png" data-pswp-width="1529" data-pswp-height="990" data-cropped="true" target="_blank">
+                        <img src="assets/img/RAA-journey.png" alt="">
+                    </a>
+                </li>  
+                <li class="item-project span8">
+                    <a href="assets/img/RAA-wires.png" data-pswp-width="1529" data-pswp-height="990" data-cropped="true" target="_blank">
+                        <img src="assets/img/RAA-wires.png" alt="">
+                    </a>
+                </li>  
+                <li class="item-project span8">
+                    <a href="assets/img/RAA-mobile.png" data-pswp-width="1529" data-pswp-height="990" data-cropped="true" target="_blank">
+                        <img src="assets/img/RAA-mobile.png" alt="">
+                    </a>
+                </li>       
+                <!-- <li class="item-project span3">
                     <a href="work.html" title="Work2"><img src="assets/img/home2.jpg" alt=""></a>
                 </li>
                 <li class="item-project span3">
@@ -100,7 +142,7 @@
                 </li>
                 <li class="item-project span3">
                     <a href="work.html" title="Work4"><img src="assets/img/home3.jpg" alt=""></a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
@@ -154,6 +196,17 @@
     </div>
 </footer> -->
 <!-- End Footer -->
+
+<script type="text/javascript">
+    var lightbox = new PhotoSwipeLightbox({
+      gallery: '.test-gallery',
+      children: 'a',
+      showHideAnimationType: 'zoom',
+      // dynamic import is not supported in UMD version
+      pswpModule: PhotoSwipe 
+    });
+    lightbox.init();
+</script>
 
 </body>
 </html>
