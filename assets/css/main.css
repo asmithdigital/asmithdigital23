@@ -135,7 +135,7 @@ h7{
 }
 
 /* ==================================================
-   Margin Bottom Sets
+   Utility styles
 ================================================== */
 
 .margin-0{
@@ -144,6 +144,10 @@ h7{
 
 .margin-150 {
 	margin-bottom: 150px !important;
+}
+
+.float-right {
+	float: right;
 }
 
 
