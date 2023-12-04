@@ -19,6 +19,7 @@ body{
 	font-family: 'Noto Sans', sans-serif;
 	line-height:30px;
 	letter-spacing: 0.2px;
+	padding: 30px;
 }
 
 
@@ -180,6 +181,10 @@ h7{
 	color: #93e3cc;
 }
 
+.hidden{ 
+	display: none !important;
+}
+
 
 /* ==================================================
    Header
@@ -201,7 +206,7 @@ header #logo a {
 	/* font-family: 'Noto Sans', sans-serif; */
 	font-size: 25px;
 	font-weight: 400;
-	line-height: 100px;
+	/* line-height: 100px; */
 	letter-spacing: 2px;
 	text-decoration: none;
 }
@@ -241,7 +246,7 @@ nav#menu #menu-nav li a {
 	display: block;
 	letter-spacing: 0.2px;
 	padding: 20px 0;
-	margin-top: 20px;
+	/* margin-top: 20px; */
 }
 
 nav#menu #menu-nav li a.btn {
