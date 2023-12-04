@@ -150,6 +150,36 @@ h7{
 	float: right;
 }
 
+.alt-font {
+	font-family: 'Montserrat', sans-serif !important;
+	/* font-style: italic; */
+	font-weight: 700;
+}
+
+.blue-bg {
+	background: #81bbf1;
+}
+
+.yellow-bg {
+	background: #fee993;
+}
+
+.green-bg {
+	background: #93e3cc;
+}
+
+.blue-text {
+	color: #81bbf1;
+}
+
+.yellow-text {
+	color: #fee993;
+}
+
+.green-text {
+	color: #93e3cc;
+}
+
 
 /* ==================================================
    Header
@@ -234,7 +264,7 @@ nav#menu #menu-nav li a:hover {
 #intro-box {
 	position: relative;
 	background:transparent;
-	padding: 100px 0 130px;
+	padding: 100px 0 200px;
 	text-align:center;
 }
 
@@ -243,7 +273,7 @@ nav#menu #menu-nav li a:hover {
 	/* font-family: 'Montserrat', sans-serif; */
 	/* font-family: 'Noto Sans', sans-serif; */
 	font-size: 40px;
-    font-weight: 400;
+    font-weight: 500;
 	line-height: 1.7;
 	letter-spacing: 0.5px;
 	text-align: start;
@@ -292,6 +322,9 @@ nav#menu #menu-nav li a:hover {
 	margin-top: 10px;
 }
 
+.portfolio {
+	padding: 50px;
+}
 
 /* .test-gallery {
 	overflow-x: scroll;
