@@ -15,7 +15,8 @@ body{
 	color:#000;
 	font-weight:400;
 	font-size:16px;
-	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Noto Sans', sans-serif;
 	line-height:30px;
 	letter-spacing: 0.2px;
 }
@@ -24,7 +25,7 @@ body{
 a{
 	/* color:#777; */
 	font-weight: 400;
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	cursor: pointer;
 	
 	-webkit-transition: color 0.15s ease-in-out 0s;	
@@ -38,7 +39,7 @@ a:active,
 a:focus{
 	outline: 0;
 	color:#000;
-	/* text-decoration:none; */
+	text-decoration:none;
 }
 
 a img {
@@ -80,12 +81,14 @@ textarea::input-placeholder {
    Typography
 ================================================== */
 
+h2,
 h3,
 h6{
 	margin:0 0 20px 0;
 	color:#000;
 	font-weight:400;
-	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Montserrat', sans-serif; */
+	/* font-family: 'Noto Sans', sans-serif; */
 	line-height:1.5em;
 }
 
@@ -122,6 +125,14 @@ h7{
 	
 }
 
+.btn {
+	text-shadow: none !important;
+	background-image: none !important;
+	/* background-color: black !important; */
+	border-radius: 0 !important;
+	border: 0 !important;
+	padding: 20px;
+}
 
 /* ==================================================
    Margin Bottom Sets
@@ -129,6 +140,10 @@ h7{
 
 .margin-0{
 	margin-bottom:0 !important;
+}
+
+.margin-150 {
+	margin-bottom: 150px !important;
 }
 
 
@@ -142,15 +157,16 @@ header {
 	width: 100%;
 	height: 100px;
 	z-index: 1001;
-	padding-top:40px;
-	padding-bottom: 40px;
+	padding-top: 0px;
+	padding-bottom: 20px;
 }
 
 header #logo a {
 	color: #000;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 22px;
-	font-weight: 500;
+	/* font-family: 'Montserrat', sans-serif; */
+	/* font-family: 'Noto Sans', sans-serif; */
+	font-size: 25px;
+	font-weight: 400;
 	line-height: 100px;
 	letter-spacing: 2px;
 	text-decoration: none;
@@ -183,12 +199,20 @@ nav#menu #menu-nav li {
 
 nav#menu #menu-nav li a {
 	color: #000;
-	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Montserrat', sans-serif; */
+	/* font-family: 'Noto Sans', sans-serif; */
 	font-size: 16px;
 	font-weight: 500;
-	line-height: 100px;
+	/* line-height: 100px; */
 	display: block;
 	letter-spacing: 0.2px;
+	padding: 20px 0;
+	margin-top: 20px;
+}
+
+nav#menu #menu-nav li a.btn {
+	color: #fff;
+	padding: 20px;
 }
 
 nav#menu #menu-nav li:last-child {
@@ -206,16 +230,15 @@ nav#menu #menu-nav li a:hover {
 #intro-box {
 	position: relative;
 	background:transparent;
-	padding: 60px 0 130px;
-	/* text-align:center; */
-	
-	
+	padding: 100px 0 130px;
+	text-align:center;
 }
 
 #intro-box h3 {
 	color: #000;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 33px;
+	/* font-family: 'Montserrat', sans-serif; */
+	/* font-family: 'Noto Sans', sans-serif; */
+	font-size: 40px;
     font-weight: 400;
 	line-height: 1.7;
 	letter-spacing: 0.5px;
@@ -266,7 +289,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 
-.test-gallery {
+/* .test-gallery {
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
@@ -276,11 +299,11 @@ nav#menu #menu-nav li a:hover {
 .test-gallery .item-project {
 	display: inline-block;
 	float: none;
-  }
+} */
   
 .item-project {
-	/* position: relative;
-	overflow: hidden;	 */
+	position: relative;
+	overflow: hidden;	
 	box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
 }
 

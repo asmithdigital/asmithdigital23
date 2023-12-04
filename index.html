@@ -29,7 +29,8 @@
 <link rel="stylesheet" href="assets/css/photoswipe.css">
 
 <!-- Google Font -->
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
+<link href='https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 
 <!-- Fav Icon -->
@@ -60,8 +61,9 @@
             <div class="span6">
         		<nav id="menu">
                     <ul id="menu-nav">
+                        <li><a href="/">work</a></li>
                         <li><a href="about.html">about</a></li>
-                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="contact.html" class="btn btn-inverse">contact</a></li>
                     </ul>
                 </nav>
         	</div>
@@ -74,9 +76,9 @@
 <section id="intro-box" class="margin-0">
 	<div class="container">
         <div class="row">
-            <div class="span8">
-                <h3>designer<h3>
-                <p class="lead">view my design</p>
+            <div class="span10 offset1">
+                <h3>Hi, I'm Andrew. I'm a UX designer based in South Australia. Welcome to my portfolio<h3>
+                <p class="lead">UX, UI, Front end develoment</p>
             </div> 
         </div>
     </div>
@@ -84,22 +86,16 @@
 <!-- End Intro Box -->
 
 <!-- Start Section Portfolio Projects -->
-<section id="portfolio" class="container">
-    <div class="row">
-        <div class="span12">
-            <h4>RAA</h4>
-            <p>I designed a number of awesome web applications for RAA. Im the best. <a href="#">view project</a></p>
-        </div>
-    </div>
+<section id="portfolio" class="container margin-150">
     <div class="row">
         <div id="portfolio-projects">
             <ul id="projects" class="test-gallery">
-                <li class="item-project span5">
+                <li class="item-project span12">
                     <a href="assets/img/RAA-home.png" data-pswp-width="1529" data-pswp-height="990" data-cropped="true" target="_blank">
                         <img src="assets/img/RAA-home.png" alt="">
                     </a>
                 </li>       
-                <li class="item-project span5">
+                <!-- <li class="item-project span5">
                     <a href="assets/img/RAA-sa.png" data-pswp-width="1529" data-pswp-height="990" data-cropped="true" target="_blank">
                         <img src="assets/img/RAA-sa.png" alt="">
                     </a>
@@ -133,6 +129,36 @@
                     <a href="assets/img/RAA-mobile.png" data-pswp-width="1529" data-pswp-height="990" data-cropped="true" target="_blank">
                         <img src="assets/img/RAA-mobile.png" alt="">
                     </a>
+                </li>        -->
+                <!-- <li class="item-project span3">
+                    <a href="work.html" title="Work2"><img src="assets/img/home2.jpg" alt=""></a>
+                </li>
+                <li class="item-project span3">
+                    <a href="work.html" title="Work3"><img src="assets/img/home4.jpg" alt=""></a>
+                </li>
+                <li class="item-project span3">
+                    <a href="work.html" title="Work4"><img src="assets/img/home3.jpg" alt=""></a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12">
+            <h2>RAA Travel</h2>
+            <p>I designed a number of awesome web applications for RAA. Im the best.</p>
+            <a href="#" class="btn btn-inverse text-right">view project</a>
+        </div>
+    </div>
+</section>
+<!-- End Section Portfolio Projects -->
+
+<!-- Start Section Portfolio Projects -->
+<section id="portfolio" class="container margin-150">
+    <div class="row">
+        <div id="portfolio-projects">
+            <ul id="projects">
+                <li class="item-project span3">
+                    <a href="work.html" title="Work1"><img src="assets/img/home1.jpg" alt=""></a>
                 </li>       
                 <!-- <li class="item-project span3">
                     <a href="work.html" title="Work2"><img src="assets/img/home2.jpg" alt=""></a>
@@ -146,40 +172,20 @@
             </ul>
         </div>
     </div>
-</section>
-<!-- End Section Portfolio Projects -->
-
-<!-- Start Section Portfolio Projects -->
-<section id="portfolio" class="container">
     <div class="row">
         <div class="span12">
-            <h4>University of Adelaide</h4>
-            <p>I designed a number of awesome web applications for RAA. Im the best. <a href="#">view project</a></p>
-        </div>
-    </div>
-    <div class="row">
-        <div id="portfolio-projects">
-            <ul id="projects">
-                <li class="item-project span3">
-                    <a href="work.html" title="Work1"><img src="assets/img/home1.jpg" alt=""></a>
-                </li>       
-                <li class="item-project span3">
-                    <a href="work.html" title="Work2"><img src="assets/img/home2.jpg" alt=""></a>
-                </li>
-                <li class="item-project span3">
-                    <a href="work.html" title="Work3"><img src="assets/img/home4.jpg" alt=""></a>
-                </li>
-                <li class="item-project span3">
-                    <a href="work.html" title="Work4"><img src="assets/img/home3.jpg" alt=""></a>
-                </li>
-            </ul>
+            <h2>University of Adelaide</h2>
+            <div class="row">
+                <div class="span10"><p>I designed a number of awesome web applications for RAA. Im the best.</p></div>
+                <div class="span2"><a href="#" class="btn">view project</a></div>
+            </div>
         </div>
     </div>
 </section>
 <!-- End Section Portfolio Projects -->
 
 <!-- Start Footer -->
-<!-- <footer class="footer-widgets">
+<footer class="footer-widgets">
 	<div class="container">
     	<div class="row">
          	<div class="span4 widget">
@@ -194,7 +200,7 @@
             </div>
         </div>
     </div>
-</footer> -->
+</footer>
 <!-- End Footer -->
 
 <script type="text/javascript">
