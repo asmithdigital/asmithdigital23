@@ -19,6 +19,9 @@ body{
 	font-family: 'Noto Sans', sans-serif;
 	line-height:30px;
 	letter-spacing: 0.2px;
+}
+
+.content-container {
 	padding: 50px;
 }
 
@@ -139,6 +142,14 @@ h7{
    Utility styles
 ================================================== */
 
+.padding-b-0{
+	padding-bottom:0 !important;
+}
+
+.padding-t-0{
+	padding-top:0 !important;
+}
+
 .margin-0{
 	margin-bottom:0 !important;
 }
@@ -221,8 +232,11 @@ header {
 	width: 100%;
 	height: 100px;
 	z-index: 1001;
-	padding-top: 0px;
-	padding-bottom: 20px;
+	/* padding: 0 50px 20px 50px; */
+}
+
+header #logo{
+	padding: 20px 0;
 }
 
 header #logo a {
@@ -294,8 +308,11 @@ nav#menu #menu-nav li a:hover {
 #intro-box {
 	position: relative;
 	background:transparent;
-	padding: 100px 0 200px;
 	text-align:center;
+}
+
+#intro-box.home {
+	padding: 100px 0 200px;
 }
 
 #intro-box h3 {
@@ -356,17 +373,25 @@ nav#menu #menu-nav li a:hover {
 	/* padding: 50px; */
 }
 
-/* .test-gallery {
+.horizontal-gallery {
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
 }
 
-.test-gallery .item-project {
+.horizontal-gallery .item-project {
 	display: inline-block;
 	float: none;
-} */
+}
+
+.horizontal-gallery .first-item {
+	margin-left: 15px !important;
+}
+
+.horizontal-gallery .last-item {
+	margin-right: 15px !important;
+}
   
 .item-project {
 	position: relative;
@@ -385,8 +410,8 @@ nav#menu #menu-nav li a:hover {
 
 footer {
 	position: relative;
-	background: transparent;	
-	padding: 40px 0 40px;
+	background: #fdfdfd;	
+	padding: 50px;
 	margin-bottom: 0px;
 }
 
