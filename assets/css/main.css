@@ -147,6 +147,10 @@ h7{
 	margin-bottom: 50px !important;
 }
 
+.margin-100 {
+	margin-bottom: 100px !important;
+}
+
 .margin-150 {
 	margin-bottom: 150px !important;
 }
@@ -183,6 +187,18 @@ h7{
 
 .green-text {
 	color: #93e3cc;
+}
+
+.blue-border {
+	border: 10px solid #81bbf1;
+}
+
+.yellow-border {
+	border: 10px solid #fee993;
+}
+
+.green-border {
+	border: 10px solid #93e3cc;
 }
 
 .hidden{ 
@@ -337,7 +353,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .portfolio {
-	padding: 50px;
+	/* padding: 50px; */
 }
 
 /* .test-gallery {
