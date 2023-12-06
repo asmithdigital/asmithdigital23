@@ -408,6 +408,32 @@ nav#menu #menu-nav li a:hover {
 	opacity:.55
 }
 
+
+.ico {
+    width:100px;
+    display:block;
+    height:20px;
+    background:black;
+    color:white;
+    text-decoration:none;
+    padding-left:20px;
+}
+
+.item-project:before {
+    content: '';
+	display:block;
+	width:40px;
+	height:40px;
+	line-height:14px;
+	vertical-align:text-top;
+	/* background-image:url("../img/glyphicons-halflings.png"); */
+	background-image: url("../img/zoom-icon.svg");
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	position: absolute;
+	bottom: 100px;
+	left: 20px;
+}
 /* ==================================================
    Footer
 ================================================== */
