@@ -397,6 +397,9 @@ nav#menu #menu-nav li a:hover {
 .item-project {
 	position: relative;
 	overflow: hidden;	
+}
+
+.item-project.shadow {
 	box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
 }
 
