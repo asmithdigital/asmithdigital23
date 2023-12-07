@@ -318,11 +318,11 @@ nav#menu #menu-nav li {
 	padding: 0 20px;
 }
 
-@media (min-width: 767px) { 
+/* @media (min-width: 767px) { 
 	nav#menu #menu-nav li {
 		padding: 0 30px;
 	}
-}
+} */
 
 nav#menu #menu-nav li a {
 	color: #000;
@@ -362,8 +362,8 @@ nav#menu #menu-nav li a:hover {
 
 @media (max-width: 767px) {
 	#intro-box.home {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 0px;
+		padding-bottom: 30px;
 	}
 }
 
