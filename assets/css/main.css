@@ -450,6 +450,10 @@ nav#menu #menu-nav li a:hover {
 	margin-left: -20px;
 }
 
+.item-project.no-icon:hover:before {
+	content: none;
+}
+
 /* ==================================================
    Footer
 ================================================== */
