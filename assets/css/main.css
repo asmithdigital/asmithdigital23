@@ -437,6 +437,14 @@ nav#menu #menu-nav li a:hover {
 	/* padding: 50px; */
 }
 
+@media (max-width: 480px) { 
+	.desktop-banner {display: none;}
+}
+
+@media (min-width: 481px) { 
+	.mobile-banner {display: none;}
+}
+
 @media (max-width: 768px) { 
 	.mobile-horizontal-gallery {
 		overflow-x: scroll;
