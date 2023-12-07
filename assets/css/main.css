@@ -21,8 +21,22 @@ body{
 	letter-spacing: 0.2px;
 }
 
+@media (max-width: 767px) {
+	body {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
 .content-container {
-	padding: 50px;
+	padding: 20px;
+}
+
+@media (min-width: 767px) {
+
+	.content-container {
+		padding: 50px;
+	}
 }
 
 
@@ -159,8 +173,15 @@ h7{
 }
 
 .margin-100 {
-	margin-bottom: 100px !important;
+	margin-bottom: 20px !important;
 }
+
+@media (min-width: 767px) {
+	.margin-100 {
+		margin-bottom: 100px !important;
+	}
+}
+
 
 .margin-150 {
 	margin-bottom: 150px !important;
@@ -226,6 +247,7 @@ h7{
    Header
 ================================================== */
 
+
 header {
 	background:transparent;
 	position: static;
@@ -236,8 +258,16 @@ header {
 	margin-bottom: 30px;
 }
 
-header #logo{
-	padding: 20px 0;
+@media (max-width: 767px) {
+	header {
+		height: auto !important;
+	}
+}
+
+@media (min-width: 979px) {
+	header #logo{
+		padding: 20px 0;
+	}
 }
 
 header #logo a {
@@ -259,8 +289,11 @@ header #logo a:hover {
 
 /* Navigation */
 
-nav#menu {
-	float: right;
+@media (min-width: 767px) { 
+	nav#menu {
+		float: right;
+	}
+	
 }
 
 nav#menu #menu-nav {
@@ -272,8 +305,13 @@ nav#menu #menu-nav li {
 	position: relative;	
 	list-style: none;
 	float: left;
-	padding: 0 30px;
-	
+	padding: 0 20px;
+}
+
+@media (min-width: 767px) { 
+	nav#menu #menu-nav li {
+		padding: 0 30px;
+	}
 }
 
 nav#menu #menu-nav li a {
@@ -468,6 +506,13 @@ footer {
 /* ==================================================
    Footer Widgets
 ================================================== */
+
+@media (max-width: 767px) {
+	footer {
+		padding: 20px;
+		margin: 0 !important;
+	}
+}
 
 footer.footer-widgets .widget {
 	margin-bottom: 0;	
