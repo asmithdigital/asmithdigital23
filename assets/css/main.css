@@ -173,7 +173,7 @@ h7{
 }
 
 .margin-100 {
-	margin-bottom: 20px !important;
+	margin-bottom: 50px !important;
 }
 
 @media (min-width: 767px) {
@@ -289,11 +289,21 @@ header #logo a:hover {
 
 /* Navigation */
 
-@media (min-width: 767px) { 
+nav#menu {
+	overflow: hidden;
+}
+
+@media (min-width: 768px) { 
 	nav#menu {
 		float: right;
 	}
 	
+}
+
+@media (max-width: 767px) {
+	nav#menu {
+		margin-left: -20px;
+	}
 }
 
 nav#menu #menu-nav {
@@ -350,8 +360,23 @@ nav#menu #menu-nav li a:hover {
 	text-align:center;
 }
 
-#intro-box.home {
-	padding: 100px 0 200px;
+@media (max-width: 767px) {
+	#intro-box.home {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+@media (min-width: 768px) {
+	#intro-box.home {
+		padding: 50px 0 100px;
+	}
+}
+
+@media (min-width: 980px) {
+	#intro-box.home {
+		padding: 100px 0 200px;
+	}
 }
 
 #intro-box h3 {
@@ -412,30 +437,44 @@ nav#menu #menu-nav li a:hover {
 	/* padding: 50px; */
 }
 
-.horizontal-gallery {
-	overflow-x: scroll;
-	overflow-y: hidden;
-	white-space: nowrap;
-	-webkit-overflow-scrolling: touch;
-}
+@media (max-width: 768px) { 
+	.mobile-horizontal-gallery {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+	}
 
-.horizontal-gallery .item-project {
-	display: inline-block;
-	float: none;
-}
+	.mobile-horizontal-gallery .item-project {
+		display: inline-block !important;
+		float: none;
+		/* display: block; */
+		/* margin-left: auto !important; */
+		/* margin-right: auto !important; */
+		margin-left: 10px !important;
+		width: 80%;
+	}
 
-.horizontal-gallery .first-item {
-	margin-left: 15px !important;
-}
+	.mobile-horizontal-gallery .first-item {
+		margin-left: 15px !important;
+	}
 
-.horizontal-gallery .last-item {
-	margin-right: 15px !important;
+	.mobile-horizontal-gallery .last-item {
+		margin-right: 15px !important;
+	}
+
 }
   
 .item-project {
 	position: relative;
 	overflow: hidden;	
 }
+
+@media (max-width: 767px) { 
+	.item-project.mobile {
+		width: 55% !important;
+	}
+ }
 
 .item-project img,
 .item-project:before {

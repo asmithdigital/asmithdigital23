@@ -162,9 +162,10 @@
 		margin-bottom: 0;	
 	}
 
-	nav#menu #menu-nav li a {
+	/* nav#menu #menu-nav li a {
 		line-height: 35px;
-		}
+	} */
+
 }
 
 @media (max-width: 320px) {
@@ -179,3 +180,5 @@
 	#intro-box h3 {
 		font-size: 20px;	
 	}
+
+}
