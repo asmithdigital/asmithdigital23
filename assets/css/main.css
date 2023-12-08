@@ -546,6 +546,11 @@ nav#menu #menu-nav li a:hover {
 	opacity:.35
 }
 
+.item-project.home:hover img,
+.item-project.home:active img {
+	opacity:1
+}
+
 
 .ico {
     width:100px;
