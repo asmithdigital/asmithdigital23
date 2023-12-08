@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <meta name="description" content=""/>
-<title>About - Name</title>   
+<title>Work - Name</title>   
 
 <!-- Mobile Specifics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,17 +23,21 @@
 <!-- Responsive -->
 <link href="assets/css/responsive.css" rel="stylesheet">
 
+<!-- Photoswipe -->
+<script src="assets/js/photoswipe.umd.min.js"></script>
+<script src="assets/js/photoswipe-lightbox.umd.min.js"></script>    
+<link rel="stylesheet" href="assets/css/photoswipe.css">
+
 <!-- Google Font -->
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 
 <!-- Fav Icon -->
-<link rel="shortcut icon" href="#">
-
-<link rel="apple-touch-icon" href="#">
-<link rel="apple-touch-icon" sizes="114x114" href="#">
-<link rel="apple-touch-icon" sizes="72x72" href="#">
-<link rel="apple-touch-icon" sizes="144x144" href="#">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
 
 <!-- Modernizr -->
 <script src="assets/js/modernizr.js"></script>
@@ -43,20 +47,24 @@
 
 <body>
 
+<div class="content-container padding-b-0">
+
 <!-- Header -->
 <header>
-	<div class="container">
-    	<div class="row">
-        	<div class="span2">
+	<div class="">
+    	<div class="row-fluid">
+        	<div class="span6">
             	<div id="logo">
-        			<a href="index.html" title="NAME">NAME</a>
+        			<a href="index.html" title="NAME">Andrew Smith</a>
         		</div>
             </div>
-            <div class="span10">
+            <div class="span6">
         		<nav id="menu">
                     <ul id="menu-nav">
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="index.html">work</a></li>
+                        <!-- <li><a href="about.html">about</a></li> -->
+                        <li class="hidden-phone"><a href="contact.html" class="btn btn-inverse">contact</a></li>
+                        <li class="visible-phone"><a href="contact.html">contact</a></li>
                     </ul>
                 </nav>
         	</div>
@@ -64,114 +72,78 @@
     </div>
 </header>
 <!-- End Header -->
+</div>
+<!-- content-container -->
 
 
-<section id="single-team" class="container">
-    <div class="row">
-      <div class="span12">
-        <div class="team-img">
-          <img src="assets/img/about.jpg" alt="About">
-        </div>
-      </div>
-    </div>
-</section>
-
-<br/>
+<div class="content-container padding-t-0">
 
 <!-- Start Intro Box -->
-<section id="intro-box" class="margin-0">
-	<div class="container">
-    <div class="row">
-        <div class="span12">   
-          <h3 class="center">Write your description here.</h3>
-        </div> 
-      </div>
+<section id="intro-box" class="home margin-0">
+	<div class="">
+        <div class="row-fluid">
+            <div class="row-fluid">
+                <div class="span8 offset2">
+                    <div class="span3">
+                        <img src="assets/img/profile.png" class="img-circle" style="width: 100%;">
+                    </div>
+                    <div class="span8 offset1 text-left">
+                        <h2>Hi, I'm Andrew. </h2>
+                        <p>I am expeirenced developing websites</p>
+                        <!-- <p class="lead">Welcome to my portfolio</p> -->
+                    </div> 
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 <!-- End Intro Box -->
 
-<!-- Services -->
-<section id="single-team" class="container">
-  <div class="row">
-    <div class="span4">
-      <div class="team-name">
-        <p>Services</p>
-      </div>
-    </div>
-    <div class="span4">
-      <div class="team-name">
-        Example<br/>
-        Example<br/>
-        Example
-      </div>
-    </div>
-    <div class="span4">           
-      <div class="team-name">
-        Example<br/>
-        Example<br/>
-        Example
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Services -->
-
-<br/>
-<br/>
-      
-<!-- Experiences -->
-<section id="single-team" class="container">
-  <div class="row">
-    <div class="span4">
-      <div class="team-description">
-         <br/>
-          <p>Experience</p>
-      </div>
-    </div>
-    <div class="span4">
-      <div class="team-name">
-        <br/>
-        <p>Experience<br/>
-        <h7>Where</h7></p>
-        <p>Experience<br/>
-        <h7>Where</h7></p>
-      </div>
-    </div>
-    <div class="span4">
-      <div class="team-name">
-        <br/>
-        <p>Experience<br/>
-        <h7>Where</h7></p>
-        <p>Experience<br/>
-        <h7>Where</h7></p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Experiences -->
-   
-<br/>
-<br/>
-<br/>
+</div>
+<!-- content-container -->
 
 <!-- Start Footer -->
 <footer class="footer-widgets">
-	<div class="container">
-    	<div class="row">
+	<div class="">
+    	<div class="row-fluid">
          	<div class="span4 widget">
             	<div class="about-widget">
-                    <h7>email@email.com</h7>
+                    <h2>Andrew Smith</h2>
+                    <ul class="unstyled">
+                        <li><a href='mai&#108;t&#111;&#58;%6&#49;&#115;&#37;6Di%74hd%69&#103;i%74al&#64;gm&#97;%&#54;9&#108;&#46;com'>asm&#105;thdig&#105;tal&#64;g&#109;&#97;il&#46;&#99;om</a></li>
+                    </ul>
+                    <ul class="inline">
+                        <li><a href="https://github.com/asmithdigital/" target="_blank" class="social"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 32 32">
+                        <path fill-rule="evenodd" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z"></path></svg></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/andrewstephensmith/" target="_blank" class="social"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
+                        </li>
                 </div>
             </div>
-             <div class="span8 widget">
+             <div class="span4 offset4 widget">
             	<div class="twitter-widget">
-                		<h7><a href="#" target="_blank">facebook</a> &nbsp; • &nbsp; <a href="#" target="_blank">instagram</a> &nbsp; • &nbsp; <a href="#" target="_blank">linkedin</a> &nbsp; • &nbsp; <a href="#" target="_blank">github</a>     
+                	<h2>Projects</h2>
+                    <ul>
+                        <li><a href="raa.html">RAA</a></li>
+                        <li><a href="uofa.html">Adelaide University</a></li>
+                    </ul>
                 </div>	
             </div>
         </div>
     </div>
 </footer>
 <!-- End Footer -->
+
+<script type="text/javascript">
+    var lightbox = new PhotoSwipeLightbox({
+      gallery: '.portfolio-gallery',
+      children: 'a',
+      showHideAnimationType: 'zoom',
+      // dynamic import is not supported in UMD version
+      pswpModule: PhotoSwipe 
+    });
+    lightbox.init();
+</script>
 
 </body>
 </html>

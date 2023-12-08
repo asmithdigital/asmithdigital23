@@ -28,6 +28,9 @@
 <script src="assets/js/photoswipe-lightbox.umd.min.js"></script>    
 <link rel="stylesheet" href="assets/css/photoswipe.css">
 
+<!-- Smoothscroll -->
+<script src="assets/js/smoothscroll.min.js"></script>
+
 <!-- Google Font -->
 <link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap' rel='stylesheet' type='text/css'>
@@ -59,8 +62,8 @@
             <div class="span6">
         		<nav id="menu">
                     <ul id="menu-nav">
-                        <li><a href="index.html">work</a></li>
-                        <li><a href="about.html">about</a></li>
+                        <li><a href="#work" id="work">work</a></li>
+                        <!-- <li><a href="about.html">about</a></li> -->
                         <li class="hidden-phone"><a href="contact.html" class="btn btn-inverse">contact</a></li>
                         <li class="visible-phone"><a href="contact.html">contact</a></li>
                     </ul>
@@ -76,8 +79,7 @@
 	<div class="">
         <div class="row-fluid">
             <div class="span8 offset2">
-                <h3>Hi, I'm Andrew. I'm a <span class="alt-font blue-text">UX & UI designer</span> and <span class="alt-font green-text">Front End web developer</span> based in Adelaide, South Australia. Welcome to my portfolio.<h3>
-                <!-- <p class="lead">Welcome to my portfolio</p> -->
+                <h3>Hi, I'm Andrew. I'm a <span class="alt-font blue-text">UX & UI designer</span> and <span class="alt-font green-text">Front End web developer</span> based in Adelaide, South Australia.</h3>
             </div> 
         </div>
     </div>
@@ -101,7 +103,7 @@
     <div class="row-fluid">
         <div class="span12">
             <h2>RAA</h2>
-            <p>Web and mobile applications designs for several prtojects including RAA Travel, RAA mobile app, and Identity management.</p>
+            <p>This case study includes Web and mobile application design for RAA Travel, RAA mobile app, and Identity management.</p>
             <a href="raa.html" class="btn btn-inverse">view case study</a>
         </div>
     </div>
@@ -109,7 +111,7 @@
 <!-- End Section Portfolio Projects -->
 
 <!-- Start Section Portfolio Projects -->
-<section id="portfolio" class="margin-100 portfolio">
+<section id="" class="margin-100 portfolio">
     <div class="row-fluid">
         <div id="portfolio-projects" class="portfolio-gallery">
             <ul id="projects">
@@ -125,7 +127,7 @@
     <div class="row-fluid">
         <div class="span12">
             <h2>University of Adelaide</h2>
-            <p>I designed a number of awesome web applications for RAA. Im the best.</p>
+            <p>This case study includes design and development for the Adelaide University website rebuild project, and style guide application.</p>
             <a href="uofa.html" class="btn btn-inverse">view case study</a>
         </div>
     </div>
@@ -142,8 +144,9 @@
          	<div class="span4 widget">
             	<div class="about-widget">
                     <h2>Andrew Smith</h2>
+                    <p>If you would like to hire me, please send me an email, or connect with me on linkedin.</p>
                     <ul class="unstyled">
-                    <li><a href='mai&#108;t&#111;&#58;%6&#49;&#115;&#37;6Di%74hd%69&#103;i%74al&#64;gm&#97;%&#54;9&#108;&#46;com'>asm&#105;thdig&#105;tal&#64;g&#109;&#97;il&#46;&#99;om</a></li>
+                        <li><a href='mai&#108;t&#111;&#58;%6&#49;&#115;&#37;6Di%74hd%69&#103;i%74al&#64;gm&#97;%&#54;9&#108;&#46;com'>asm&#105;thdig&#105;tal&#64;g&#109;&#97;il&#46;&#99;om</a></li>
                     </ul>
                     <ul class="inline">
                         <li><a href="https://github.com/asmithdigital/" target="_blank" class="social"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 32 32">
@@ -151,6 +154,7 @@
                         </li>
                         <li><a href="https://www.linkedin.com/in/andrewstephensmith/" target="_blank" class="social"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
                         </li>
+                    </ul>
                 </div>
             </div>
              <div class="span4 offset4 widget">
@@ -166,6 +170,12 @@
     </div>
 </footer>
 <!-- End Footer -->
+
+<script type="text/javascript">
+    document.getElementById('work').addEventListener('click', function(e){
+    	smoothScroll({toElement: document.getElementById('portfolio'), duration: 500, easing: 'easeInOutCubic'});
+    });
+</script>
 
 </body>
 </html>

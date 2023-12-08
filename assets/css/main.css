@@ -418,7 +418,7 @@ nav#menu #menu-nav li a:hover {
    Portfolio
 ================================================== */
 
-#portfolio img {
+.portfolio img {
 	width: 100%;	
 }
 
