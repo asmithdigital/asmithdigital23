@@ -266,7 +266,7 @@ header {
 
 @media (min-width: 979px) {
 	header #logo{
-		padding: 20px 0;
+		/* padding: 20px 0; */
 	}
 }
 
