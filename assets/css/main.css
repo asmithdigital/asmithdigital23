@@ -345,6 +345,11 @@ nav#menu #menu-nav li {
 	padding: 0 20px;
 }
 
+nav#menu #menu-nav i {
+	vertical-align: middle;
+	padding-right: 10px;
+}
+
 /* @media (min-width: 767px) { 
 	nav#menu #menu-nav li {
 		padding: 0 30px;
